@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Information</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .ip-info {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Enter IP Address</h2>
+        <form id="ip-form" action="#">
+            <input type="text" id="ip-address" placeholder="Enter IP Address" required>
+            <button type="submit">Get Information</button>
+        </form><br>
+        <button id="get-my-ip">What's My IP Information?</button>
+        <div class="ip-info" id="ip-info">
+            <!-- Information will be displayed here -->
+        </div>
+    </div>
+    <script>
+        document.getElementById('ip-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            var ipAddress = document.getElementById('ip-address').value;
+            fetch('https://ipapi.co/' + ipAddress + '/json/')
+                .then(response => response.json())
+                .then(data => {
+                    var infoContainer = document.getElementById('ip-info');
+                    infoContainer.innerHTML = '<h3>IP Information:</h3>';
+                    infoContainer.innerHTML += '<p><strong>IP Address:</strong> ' + data.ip + '</p>';
+                    infoContainer.innerHTML += '<p><strong>Country:</strong> ' + data.country_name + '</p>';
+                    infoContainer.innerHTML += '<p><strong>Region:</strong> ' + data.region + '</p>';
+                    infoContainer.innerHTML += '<p><strong>City:</strong> ' + data.city + '</p>';
+                    infoContainer.innerHTML += '<p><strong>Postal Code:</strong> ' + data.postal + '</p>';
+                })
+                .catch(error => console.error('Error fetching IP information:', error));
+        });
+
+        document.getElementById('get-my-ip').addEventListener('click', function() {
+            fetch('https://ipapi.co/json/')
+                .then(response => response.json())
+                .then(data => {
+                    var infoContainer = document.getElementById('ip-info');
+                    infoContainer.innerHTML = '<h3>My IP Information:</h3>';
+                    infoContainer.innerHTML += '<p><strong>IP Address:</strong> ' + data.ip + '</p>';
+                    infoContainer.innerHTML += '<p><strong>Country:</strong> ' + data.country_name + '</p>';
+                    infoContainer.innerHTML += '<p><strong>Region:</strong> ' + data.region + '</p>';
+                    infoContainer.innerHTML += '<p><strong>City:</strong> ' + data.city + '</p>';
+                    infoContainer.innerHTML += '<p><strong>Postal Code:</strong> ' + data.postal + '</p>';
+                })
+                .catch(error => console.error('Error fetching IP information:', error));
+        });
+    </script>
+</body>
+
+</html>
