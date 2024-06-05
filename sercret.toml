@@ -1,0 +1,14 @@
+[connections.gsheets]
+spreadsheet = "https://docs.google.com/spreadsheets/d/1GB0HaR13Ygb14qe_wTc4DBNs_QWxegfhbRVMv-4WNto/edit?usp=sharing"
+worksheet = "0"  # worksheet GID is used when using Public Spreadsheet URL, when usign service_account it will be picked as folder_id
+type = "service_account"  # leave empty when using Public Spreadsheet URL, when using service_account -> type = "service_account"
+project_id = "webservicejdm-424112"
+private_key_id = "1b12341015452d768330cba126fd4d9f2dec5788"
+private_key = "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC4rXpBtu/bvHIf\n1fQqMP5Y9Qxcp+3nvGsdxKuoGK8jd9o1yU/e+PyeCISB8lqfuAk6mbcAT3KNpiwv\n61JQLGQcu9x9K4V0usLXxjuC2w0n9cID41oMCqQyxmKox+A5YyaalOSkU4MzYJNo\nCTOyfWQpMTXzBPsIlQnJZQ76CusHgeHkX5Da6XQbDgEWbtNJCMs3ydnydW7X5u4T\ntHGtCmcIS8n44SNQhPUeScTV1S7tU7a59hmMBiWRGXx6FX82cUUw97kPUd0xwiEW\n5Zo5WAuqp5owCmbExfWaGwrvbMav4QH3SJzOJDo5i5nZg9M/n2ivOE59Vu1VbaGm\ntMsOmYRLAgMBAAECggEAWNLPR4YWTWiQt3Evc4+G9gA+ht4aFehQ2Mt8CGh+7B88\nK7x8lvDIh7XvDZUkM0fP4IiINTUBEtIG1LFpMLh5Gjzc6rMhCCi/iAqHGwQCiuKw\nAzC5YatImEdEsosX9GIU8iqE4ehs5SwhGdu7KrEWmJ1bplwR5WnRgDUEBA12R3BG\nLsh7gortYzr5hbDyNoBVuOobhiA/rY1/Mt714qbVdoQQEdJF9fJVUx5K+Xh4FUYn\n5lKJFNSexvFAtlgN7lq6ipodZiYaE+rraQ/Cw61QyIYTy4BXLPIpvD1afLgpHMGq\nka9t0o8rSkAJSq/V0/vz6dYzJgGhXOEZ4Rkf0SXfmQKBgQDo7zKo/ivo/ozMgQ9k\nnBO3qsH07pRqbUGOig4XgRpfwy7djdqcIZteLqLA6aOf/f4/lYrGV1866jp8T8k+\neYcblBCfCGof2k8gtK1uvtAloxd5Qr0BFZT9Wt56CvsxyCgh9UhvjfohzB03f/Pj\nTuv/3lBbKALGC42DCFjaov9F/wKBgQDK9v0+90UgHdNZVhgFKBNsw6qASAuPQ7nb\nmYzxGyT8/De2OUlF3BQDtGR1U3a/5uTCzpprMZ3yCbPFt7I/24UASaSoupttcQIA\n4RXGwm4yux+5N8rSPCNs7zjfdbeRDE/HfnrhpaS9j1geWaaLJRhHuOwRepm0Ht40\ncp/cSvj5tQKBgQCsy+1P8iXO1S7L8p3hq+rwoEr8ERSmkuBEBmQHya0wBxI4Jyha\nFJA2YPA5ndjVMk2vC5eEJYKuqN20JFgM8YhpzAA8ibh4YrG6eG4ELqcolIEwYnLl\nYAZDoGpULNtFhc9HybbvkmpRMiMmbdQV9xEZoekIhnjwQ9e5sbKAltQ6LwKBgQCf\nZAYPS8qaZTHUB5uHeSiAEs00Pt/tG2e7AERCGGoczsnFrglP9nw1SJZX2Tr5i479\nOZjlM6rxKBNo41D1eyRgzHSmGR30fXnwTNN4Krq11mQcZac/IQFFDDziqCSHoV6J\nsVc5G4dbYlX2R7tVrMT7lkq1k01fuZoRIC9QpgQOvQKBgQCVRMFhqJ0XM0Yh04Il\nCyN/rWAr2GnmnZK2/yYSDI2v55gjs6Pue4en8VT72NRITBY6LvnLYJXHkY0X1QtV\njTOH9Ikki1X9DWBiNMVHsTyx5irJI40xTbwaO8ZTBlfwBhtVXu+eABPjGoUGlAVZ\nk83tyXF+wRL9JJ3vUw6EQh864w==\n-----END PRIVATE KEY-----\n"
+client_email = "webservicejdm1403@webservicejdm-424112.iam.gserviceaccount.com"
+client_id = "107135395466307453859"
+auth_uri = "https://accounts.google.com/o/oauth2/auth"
+token_uri = "https://oauth2.googleapis.com/token"
+auth_provider_x509_cert_url = "https://www.googleapis.com/oauth2/v1/certs"
+client_x509_cert_url = "https://www.googleapis.com/robot/v1/metadata/x509/webservicejdm1403%40webservicejdm-424112.iam.gserviceaccount.com"
+universe_domain = "googleapis.com"
