@@ -22,7 +22,7 @@ To run the project, simply open either of the HTML files in your browser:
 
 - Navigate to the project directory:
 
-  `cd ip-info-service`
+  `cd web-service-ex1-2`
 
 - Open api-ip-2.html or api-ui-ip.html in your favorite web browser.
 
