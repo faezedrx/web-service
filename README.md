@@ -5,7 +5,7 @@ The first and second exercises related to the WEB SERVICE lesson - - And a part 
 Welcome to the IP Information Service repository! This project showcases how to create a simple web application to fetch and display IP address information using the ipapi service. This repository contains two HTML files demonstrating different styles and functionalities.
 
 ## 📄 Project Files
-**1. `api-ip-2.html`**
+**1. `api-ip-2.html = index.html`**
 
 This file uses Bootstrap for styling and includes additional functionality to check if the entered IP address belongs to the same country as the user's IP address.
 
@@ -24,7 +24,7 @@ To run the project, simply open either of the HTML files in your browser:
 
   `cd web-service-ex1-2`
 
-- Open api-ip-2.html or api-ui-ip.html in your favorite web browser.
+- Open api-ip-2.html=index.html or api-ui-ip.html in your favorite web browser.
 
 ## 📚 Lesson Context
 
@@ -46,7 +46,7 @@ To run the project, simply open either of the HTML files in your browser:
 
 - HTML: Basic structure and layout
 - CSS: Styling and design
-- Bootstrap: Responsive design for api-ip-2.html
+- Bootstrap: Responsive design for api-ip-2.html=index.html
 - JavaScript: Fetch API to get IP information
 - python : Connect to google sheet
 
